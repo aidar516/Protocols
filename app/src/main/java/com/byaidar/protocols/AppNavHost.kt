@@ -25,13 +25,8 @@ fun AppNavHost(){
             MainScreen(navController)
         }
         composable("rtmp") {
-            if (!hasPermissions) {
-                RequestPermissions {
-                    hasPermissions = true
-                }
-            } else {
-                RTMPScreen(navController)
-            }
+            RTMPScreen(navController)
+
         }
         composable("udp-multicast"){
             UDPMulticastScreen(navController)
