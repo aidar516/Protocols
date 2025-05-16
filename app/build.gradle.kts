@@ -50,6 +50,8 @@ dependencies {
 
     implementation("androidx.media3:media3-exoplayer-hls:1.6.0")
 
+    implementation ("org.videolan.android:libvlc-all:3.6.0")
+
     implementation(libs.androidx.media3.common)
     implementation(libs.androidx.media3.datasource.rtmp)
 

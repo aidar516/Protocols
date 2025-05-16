@@ -127,7 +127,12 @@ fun RTMPScreen(navController: NavController) {
         OutlinedTextField(
             value = inputUrl,
             onValueChange = { inputUrl = it },
-            label = { Text("RTMP URL") },
+            label = {
+                Text(
+                    text = "RTMP URL",
+                    color = Color.Black
+                )
+            },
             trailingIcon = {
                 IconButton(onClick = { activeUrl = inputUrl }) {
                     Icon(Icons.Default.Send, contentDescription = "Play")

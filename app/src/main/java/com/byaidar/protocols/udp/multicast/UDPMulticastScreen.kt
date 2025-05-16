@@ -128,7 +128,12 @@ fun UDPMulticastScreen(navController: NavController) {
         OutlinedTextField(
             value = inputUrl,
             onValueChange = { inputUrl = it },
-            label = { Text("UDP Multicast url") },
+            label = {
+                Text(
+                    text = "UDP Multicast URL",
+                    color = Color.Black
+                )
+            },
             trailingIcon = {
                 IconButton(onClick = { activeUrl = inputUrl }) {
                     Icon(Icons.Default.Send, contentDescription = "Play")

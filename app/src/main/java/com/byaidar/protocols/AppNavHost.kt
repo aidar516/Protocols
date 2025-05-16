@@ -10,12 +10,12 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.byaidar.protocols.rtmp.RTMPScreen
 import com.byaidar.protocols.rtsp.RTSPScreen
+import com.byaidar.protocols.udp.UDPScreen
 import com.byaidar.protocols.udp.multicast.UDPMulticastScreen
 
 @Composable
 fun AppNavHost(){
     val navController = rememberNavController()
-    var hasPermissions by remember { mutableStateOf(false) }
 
     NavHost(
         navController = navController,
@@ -35,7 +35,7 @@ fun AppNavHost(){
             RTSPScreen(navController)
         }
         composable("udp"){
-
+            UDPScreen(navController)
         }
     }
 }
