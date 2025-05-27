@@ -37,25 +37,22 @@ android {
     buildFeatures {
         compose = true
     }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "2.0.0"
+    }
 }
 
 dependencies {
-    implementation("com.github.pedroSG94.RootEncoder:library:2.5.9")
-    implementation("com.github.pedroSG94.RootEncoder:extra-sources:2.5.9")
+//    implementation("androidx.media3:media3-exoplayer:1.7.1")
+//    implementation("androidx.media3:media3-ui:1.7.1")
+//    implementation("androidx.media3:media3-datasource:1.7.1")
+//    implementation("androidx.media3:media3-exoplayer-hls:1.7.1")
+//    implementation ("org.videolan.android:libvlc-all:3.6.0")
+//    implementation(libs.androidx.media3.common)
+//    implementation(libs.androidx.media3.datasource.rtmp)
+    implementation(project(":videoThreadGroza"))
 
-    implementation("androidx.media3:media3-exoplayer:1.6.0")
-    implementation("androidx.media3:media3-ui:1.6.0")
-    implementation("androidx.media3:media3-datasource:1.6.0")
-
-
-    implementation("androidx.media3:media3-exoplayer-hls:1.6.0")
-
-    implementation ("org.videolan.android:libvlc-all:3.6.0")
-
-    implementation(libs.androidx.media3.common)
-    implementation(libs.androidx.media3.datasource.rtmp)
-
-
+    implementation(libs.androidx.material)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.navigation.ui)
 

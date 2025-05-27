@@ -48,28 +48,28 @@ fun MainScreen(navController: NavController) {
                             navController.navigate("rtmp")
                         }
                     ) {
-                        Text("RTMP")
+                        Text("Протоколы")
                     }
-                    Button(
-                        modifier = Modifier.fillMaxWidth(),
-                        onClick = {
-                            navController.navigate("rtsp")
-                        }
-                    ) {
-                        Text("RTSP")
-                    }
-                    Button(
-                        modifier = Modifier.fillMaxWidth(),
-                        onClick = { navController.navigate("udp") }
-                    ) {
-                        Text("UDP")
-                    }
-                    Button(
-                        modifier = Modifier.fillMaxWidth(),
-                        onClick = { navController.navigate("udp-multicast") }
-                    ) {
-                        Text("UDP Multicast")
-                    }
+//                    Button(
+//                        modifier = Modifier.fillMaxWidth(),
+//                        onClick = {
+//                            navController.navigate("rtsp")
+//                        }
+//                    ) {
+//                        Text("RTSP")
+//                    }
+//                    Button(
+//                        modifier = Modifier.fillMaxWidth(),
+//                        onClick = { navController.navigate("udp") }
+//                    ) {
+//                        Text("UDP")
+//                    }
+//                    Button(
+//                        modifier = Modifier.fillMaxWidth(),
+//                        onClick = { navController.navigate("udp-multicast") }
+//                    ) {
+//                        Text("UDP Multicast")
+//                    }
                 }
             }
         }

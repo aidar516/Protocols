@@ -22,4 +22,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Protocols"
 include(":app")
- 
+include(":videoThreadGroza")
